@@ -28,17 +28,13 @@ defineExpose({
 </script>
 
 <template>
-  <view class="h-vh max-h-vh flex flex-col overflow-hidden">
+  <view class="max-h-vh overflow-hidden">
     <!-- 这个先隐藏了，知道这样用就行 -->
     <view class="hidden text-center">
       {{ helloKuRoot }}，这里可以配置全局的东西
     </view>
 
     <KuRootView />
-
-    <!-- <u-button type="default" class="fixed right-20 top-20 z-100 bg-white">
-      点击播放
-    </u-button> -->
 
     <FgTabbar v-if="isCurrentPageTabbar" />
   </view>
