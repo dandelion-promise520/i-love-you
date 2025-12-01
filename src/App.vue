@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onHide, onLaunch, onShow } from '@dcloudio/uni-app'
 import { navigateToInterceptor } from '@/router/interceptor'
+import backgroundAudio from './utils/backgroundAudio'
 
 onLaunch((options) => {
   console.log('App.vue onLaunch', options)
@@ -18,6 +19,8 @@ onShow((options) => {
 })
 onHide(() => {
   console.log('App Hide')
+
+  backgroundAudio.pause()
 })
 </script>
 

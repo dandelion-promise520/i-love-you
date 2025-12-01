@@ -70,7 +70,7 @@ function updateData() {
 </script>
 
 <template>
-  <view class="h-vh center flex-col justify-between px-8 pb-40 pt-20">
+  <view class="h-full center flex-col justify-between px-8 pb-40 pt-20">
     <!-- 上半部分 -->
     <view class="center flex-col gap-4">
       <view class="text-white">

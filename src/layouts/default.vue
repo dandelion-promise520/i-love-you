@@ -1,5 +1,5 @@
 <template>
-  <view class="h-vh bg-black">
+  <view class="flex-1 bg-black">
     <slot />
   </view>
 </template>
