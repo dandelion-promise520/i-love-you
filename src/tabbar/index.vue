@@ -69,8 +69,8 @@ onMounted(() => {
   })
 })
 // #endif
-const activeColor = 'var(--wot-color-theme, #1890ff)'
-const inactiveColor = '#666'
+const activeColor = 'var(--wot-color-theme, #000)'
+const inactiveColor = '#fff'
 function getColorByIndex(index: number) {
   return tabbarStore.curIdx === index ? activeColor : inactiveColor
 }
@@ -86,7 +86,7 @@ function getImageByIndex(index: number, item: CustomTabBarItem) {
 
 <template>
   <view v-if="customTabbarEnable" class="h-50px pb-safe">
-    <view class="border-and-fixed bg-white" @touchmove.stop.prevent>
+    <view class="border-and-fixed" @touchmove.stop.prevent>
       <view class="h-50px flex items-center">
         <view
           v-for="(item, index) in tabbarList" :key="index"
@@ -146,7 +146,8 @@ function getImageByIndex(index: number, item: CustomTabBarItem) {
   left: 0;
   right: 0;
 
-  border-top: 1px solid #eee;
+  background-color: #000;
+  // border-top: 1px solid #eee;
   box-sizing: border-box;
 }
 // 中间鼓包的样式

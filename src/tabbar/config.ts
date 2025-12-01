@@ -43,22 +43,22 @@ export const nativeTabbarList: NativeTabBarItem[] = [
 // 如果需要配置鼓包，需要在 'tabbar/store.ts' 里面设置，最后在 `tabbar/index.vue` 里面更改鼓包的图片
 export const customTabbarList: CustomTabBarItem[] = [
   {
-    text: '首页',
+    text: '爱小朱吖',
     pagePath: 'pages/index/index',
     // 注意 unocss 图标需要如下处理：（二选一）
     // 1）在fg-tabbar.vue页面上引入一下并注释掉（见tabbar/index.vue代码第2行）
     // 2）配置到 unocss.config.ts 的 safelist 中
     iconType: 'unocss',
-    icon: 'i-carbon-home',
+    icon: '',
     // badge: 'dot',
   },
   {
     pagePath: 'pages/me/me',
-    text: '我的',
+    text: '土味情话',
     // 1）在fg-tabbar.vue页面上引入一下并注释掉（见tabbar/index.vue代码第2行）
     // 2）配置到 unocss.config.ts 的 safelist 中
     iconType: 'unocss',
-    icon: 'i-carbon-user',
+    icon: '',
     // badge: 10,
   },
   // 其他类型演示
@@ -114,9 +114,9 @@ export const tabbarList = customTabbarEnable ? customTabbarList : nativeTabbarLi
 const _tabbar: TabBar = {
   // 只有微信小程序支持 custom。App 和 H5 不生效
   custom: selectedTabbarStrategy === TABBAR_STRATEGY_MAP.CUSTOM_TABBAR_WITH_CACHE,
-  color: '#999999',
-  selectedColor: '#018d71',
-  backgroundColor: '#F8F8F8',
+  color: '#ffffff',
+  selectedColor: '#ffffff',
+  backgroundColor: '#000000',
   borderStyle: 'black',
   height: '50px',
   fontSize: '10px',

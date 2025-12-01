@@ -33,8 +33,8 @@ function change() {
 </script>
 
 <template>
-  <view class="h-vh bg-black">
-    <view class="h-[60vh] center flex-col gap-6">
+  <view class="h-full">
+    <view class="h-3/5 center flex-col gap-6">
       <img :src="imgUrl">
       <view class="w-30">
         <u-dropdown active-color="pink" border-radius="10" class="select">
